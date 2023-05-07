@@ -7,8 +7,8 @@ let package = Package(
     name: "Pylon",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(name: "Pylon", targets: ["Shortcuts", "WarpBlade"]),
-        .library(name: "PylonUI", targets: ["ShortcutsUI", "Palette"]),
+        .library(name: "Pylon", targets: ["Pylon"]),
+        .library(name: "PylonUI", targets: ["PylonUI"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -17,8 +17,10 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        
+
         //  MARK: - Common
+        .target(name: "Pylon", dependencies: ["Shortcuts", "WarpBlade"]),
+
         .target(name: "Shortcuts", dependencies: []),
         .target(name: "WarpBlade", dependencies: ["Shortcuts"]),
 
@@ -26,6 +28,8 @@ let package = Package(
         .testTarget(name: "WarpBladeTests", dependencies: ["WarpBlade"]),
 
         //  MARK: - UI
+        .target(name: "PylonUI", dependencies: ["ShortcutsUI", "Palette"]),
+
         .target(name: "ShortcutsUI", dependencies: ["Shortcuts"]),
         .target(name: "Palette", dependencies: ["ShortcutsUI"]),
         
