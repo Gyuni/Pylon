@@ -146,6 +146,34 @@
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "PsionicBlade"
+               BuildableName = "PsionicBlade"
+               BlueprintName = "PsionicBlade"
+               ReferencedContainer = "container:">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Khala"
+               BuildableName = "Khala"
+               BlueprintName = "Khala"
+               ReferencedContainer = "container:">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -191,6 +219,26 @@
                BlueprintIdentifier = "WarpBladeTests"
                BuildableName = "WarpBladeTests"
                BlueprintName = "WarpBladeTests"
+               ReferencedContainer = "container:">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "PsionicBladeTests"
+               BuildableName = "PsionicBladeTests"
+               BlueprintName = "PsionicBladeTests"
+               ReferencedContainer = "container:">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "KhalaTests"
+               BuildableName = "KhalaTests"
+               BlueprintName = "KhalaTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>

@@ -19,13 +19,13 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
 
         //  MARK: - Common
-        .target(name: "Pylon", dependencies: ["Shortcuts", "WarpBlade"]),
+        .target(name: "Pylon", dependencies: ["Shortcuts", "Khala"]),
 
         .target(name: "Shortcuts", dependencies: []),
-        .target(name: "WarpBlade", dependencies: ["Shortcuts"]),
+        .target(name: "Khala", dependencies: ["Shortcuts"]),
 
         .testTarget(name: "ShortcutsTests", dependencies: ["Shortcuts"]),        
-        .testTarget(name: "WarpBladeTests", dependencies: ["WarpBlade"]),
+        .testTarget(name: "KhalaTests", dependencies: ["Khala"]),
 
         //  MARK: - UI
         .target(name: "PylonUI", dependencies: ["ShortcutsUI", "Palette"]),
