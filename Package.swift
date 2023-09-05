@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "Pylon",
+    platforms: [.iOS(.v16)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(name: "Pylon", targets: ["Pylon"]),
@@ -13,6 +14,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
+        .package(url: "https://github.com/devxoul/Then", from: "3.0.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -21,7 +23,7 @@ let package = Package(
         //  MARK: - Common
         .target(name: "Pylon", dependencies: ["Shortcuts", "Khala"]),
 
-        .target(name: "Shortcuts", dependencies: []),
+        .target(name: "Shortcuts", dependencies: ["Then"]),
         .target(name: "Khala", dependencies: ["Shortcuts"]),
 
         .testTarget(name: "ShortcutsTests", dependencies: ["Shortcuts"]),        
